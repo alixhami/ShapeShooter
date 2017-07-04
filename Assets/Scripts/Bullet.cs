@@ -4,13 +4,14 @@ using UnityEngine;
 
 namespace Shapes {
   public class Bullet : MonoBehaviour {
-    // Use this for initialization
+
     void Start () {
-      Invoke("selfDestruct", 2f);
+      
     }
     
     void OnCollisionEnter (Collision c) {
-      Destroy(c.gameObject);
+      transform.SetParent(c.gameObject.transform);
+      GetComponent<Rigidbody>().isKinematic = true;
     }
 
     void selfDestruct () {

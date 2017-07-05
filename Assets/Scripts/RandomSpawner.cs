@@ -16,7 +16,10 @@ public class RandomSpawner : MonoBehaviour {
 
   void SpawnRandom () {
     randomInt = Random.Range(0, spawnees.Length);
-    GameObject newSpawn = Instantiate(spawnees[randomInt], spawnPos.position, spawnPos.rotation)as GameObject;
+    Vector3 randomPos = spawnPos.position;
+    randomPos.x = Random.Range(-5f ,5f);
+
+    GameObject newSpawn = Instantiate(spawnees[randomInt], randomPos, spawnPos.rotation)as GameObject;
     newSpawn.GetComponent<Rigidbody>().AddForce(transform.forward * 20f, ForceMode.VelocityChange);
   }
 }

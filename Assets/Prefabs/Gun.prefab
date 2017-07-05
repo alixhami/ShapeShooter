@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 33299468344168522}
   - component: {fileID: 23520318882650964}
   m_Layer: 0
-  m_Name: 
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 33228858276905120}
   - component: {fileID: 23704432646385238}
   m_Layer: 0
-  m_Name: 
+  m_Name: Hull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 33048292999485370}
   - component: {fileID: 23380349856195206}
   m_Layer: 0
-  m_Name: 
+  m_Name: Munition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

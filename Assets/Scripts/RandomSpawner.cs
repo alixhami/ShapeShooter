@@ -9,9 +9,8 @@ public class RandomSpawner : MonoBehaviour {
 
   int randomInt;
 	
-	// Update is called once per frame
-	void Update () {
-		SpawnRandom();
+	void Start () {
+    InvokeRepeating("SpawnRandom", 1.0f, 1.0f);
 	}
 
   void SpawnRandom () {

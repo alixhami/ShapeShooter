@@ -5,9 +5,8 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour {
 
 	public GameObject[] spawnees;
-
   int randomInt;
-	
+
 	void Start () {
     InvokeRepeating("SpawnRandom", 1.0f, 2.0f);
 	}
@@ -20,6 +19,5 @@ public class RandomSpawner : MonoBehaviour {
     randomPos.x = Random.Range(-5f ,5f);
 
     GameObject newSpawn = Instantiate(spawnees[randomInt], randomPos, transform.rotation)as GameObject;
-    newSpawn.GetComponent<Rigidbody>().AddForce(newSpawn.transform.forward * 1f, ForceMode.VelocityChange);
   }
 }
